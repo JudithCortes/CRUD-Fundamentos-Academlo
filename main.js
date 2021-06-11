@@ -89,11 +89,9 @@ const createUser = event => {
 };
 
 const deleteUser = index => {
-  // usersList.splice(index, 1);
-  console.log(
-    `Vamos a eliminar a ${usersList[index].name} que esté en la posición ${index}`
-  );
-  // renderList();
+  usersList.splice(index, 1);
+ 
+  renderList();
 };
 
 userForm.addEventListener("submit", createUser);
